@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('pages/home', { title: 'Yu Waddy Lwin | Computer Science Portfolio' });
+    res.render('home', { title: 'Yu Waddy Lwin | Computer Science Portfolio' });
 });
 
 const PORT = process.env.PORT || 8000;
