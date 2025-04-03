@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="subtitle">Hello, I'm</h4>
+                <h1 class="title">Yu Waddy Lwin</h1>
+                <h2 class="tagline">Computer Science Student</h2>
+                <div class="social-links">
+                </div>
+                <a href="#about_me" class="cta-button">Explore My Work <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about_me" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Second-Year Computer Science Student</h3>
+                    <p>I'm passionate about creating elegant solutions to complex problems through code. With experience in Python, JavaScript, and database systems, I'm constantly expanding my skill set to tackle new challenges.</p>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Technologies</h4>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Git/GitHub</li>
+                                <li>Microsoft Access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="/images/Fun Photo.JPG" alt="Yu Waddy Lwin">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects_showcase" class="section dark-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Portfolio</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Selected works demonstrating my technical capabilities</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="/images/Python_project.png" alt="Student Management System">
+                    </div>
+                    <div class="project-details">
+                        <h3>Student Management System</h3>
+                        <p class="project-description">Python application managing student records using CSV files with full CRUD functionality and seamless program flow.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>CSV</span>
+                            <span>File I/O</span>
+                        </div>
+                        <a href="https://github.com/yuwaddylwin/Assignment/tree/fa70483ef4110149fb56dda8bfe2f0de0581e9ec/tem" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="/images/Database Project.png" alt="Online Shopping Database">
+                    </div>
+                    <div class="project-details">
+                        <h3>Online Shopping Database</h3>
+                        <p class="project-description">Comprehensive e-commerce database system with integrated modules for customers, products, orders, and payments.</p>
+                        <div class="project-tech">
+                            <span>Microsoft Access</span>
+                            <span>SQL</span>
+                            <span>Database Design</span>
+                        </div>
+                        <a href="https://github.com/yuwaddylwin/Assignment/tree/6fdfa3eacf6cca144bca46a2030024e38dd2c5c9/Database" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="/images/Data Structure & Algorithms Project.png" alt="Food Delivery System">
+                    </div>
+                    <div class="project-details">
+                        <h3>Food Delivery System</h3>
+                        <p class="project-description">Efficient order management system using Binary Search Trees with order processing and payment functionality.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                        </div>
+                        <a href="https://github.com/yuwaddylwin/Assignment/blob/0d012dd9afc6290fbfc91f30ff91b95b2b4bc3a0/FoodDelivery.py" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact_section" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Have a project in mind or want to connect? I'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form" data-aos="fade-right">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:yuwaddylwin.2004@gmail.com">yuwaddylwin.2004@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Based in Thailand</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Availability</h4>
+                            <p>Open to internships and collaborations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="blog_section" class="section dark-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Development Journey</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="timeline" data-aos="fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>First Steps in Programming</h3>
+                        <p>Began my journey with Harvard's CS50 Python course, building foundational programming skills through rigorous problem-solving exercises.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>University Studies Began</h3>
+                        <p>Started formal education in Computer Science, diving deep into algorithms, data structures, and database systems while working on multiple projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Exploring Web Technologies</h3>
+                        <p>Expanded into full-stack development with Node.js and Express.js, while also exploring blockchain technology and advanced mathematics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Future</div>
+                    <div class="timeline-content">
+                        <h3>Continuing the Journey</h3>
+                        <p>Committed to lifelong learning in technology, with plans to explore machine learning, cloud computing, and contributing to open-source projects.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <blockquote class="journey-quote">
+                "Programming isn't about what you know; it's about what you can figure out. Each challenge is an opportunity to grow, and every project teaches me something new."
+            </blockquote>
+        </div>
+    </section>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>
