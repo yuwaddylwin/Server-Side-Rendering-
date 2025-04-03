@@ -11,10 +11,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('home', { title: 'Yu Waddy Lwin | Computer Science Portfolio' });
+    res.render('pages/home', { title: 'Yu Waddy Lwin | Computer Science Portfolio' });
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
