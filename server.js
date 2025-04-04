@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.render('pages/home', { title: 'Yu Waddy Lwin | Computer Science Portfolio' });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3010;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });

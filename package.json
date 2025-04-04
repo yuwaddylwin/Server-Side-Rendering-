@@ -17,5 +17,9 @@
     "url": "https://github.com/yuwaddylwin/SSR-Portfolio/issues"
   },
   "homepage": "https://github.com/yuwaddylwin/SSR-Portfolio#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
 }
