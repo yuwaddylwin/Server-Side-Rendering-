@@ -14,6 +14,13 @@ app.get('/', (req, res) => {
     res.render('pages/home', { title: 'Yu Waddy Lwin | Computer Science Portfolio' });
 });
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+  });
+  
+
 const PORT = process.env.PORT || 3010;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
